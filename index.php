@@ -2,7 +2,7 @@
 
 require_once('src/A11y/Menu_Generator.php');
 
-$data = file_get_contents(__DIR__ . '/vendor/ucomm/a11y-menu/src/mock-data/test-data.json');
+$data = file_get_contents(__DIR__ . '/src/data/mock-data.json');
 $decoded = json_decode($data);
 
 ?>
