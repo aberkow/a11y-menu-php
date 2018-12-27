@@ -1,0 +1,22 @@
+{
+    "name": "aberkow/a11y-menu-php",
+    "description": "A package for generating accessible navigation menus",
+    "authors": [
+        {
+            "name": "Adam Berkowitz",
+            "email": "adam@adamjberkowitz.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ucomm/a11y-menu": "dev-master"
+    },
+    "config": {
+        "secure-http": true
+    },
+    "autoload": {
+        "psr-4": {
+            "A11y\\": "src/A11y/"
+        }
+    }
+}

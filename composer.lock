@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "44b3b2c08f128ab5774f721323f2ff0f",
+    "packages": [
+        {
+            "name": "ucomm/a11y-menu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aberkow/a11y-menu.git",
+                "reference": "45512047f8d9eec24b088ae54b484cfb624221bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aberkow/a11y-menu/zipball/45512047f8d9eec24b088ae54b484cfb624221bf",
+                "reference": "45512047f8d9eec24b088ae54b484cfb624221bf",
+                "shasum": ""
+            },
+            "require-dev": {
+                "johnpbloch/wordpress": "@stable",
+                "wpackagist-plugin/wordpress-importer": "dev-trunk",
+                "wpackagist-theme/twentyseventeen": "^1.6"
+            },
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                },
+                "wordpress-install-dir": "./www/wordpress"
+            },
+            "autoload": {
+                "psr-4": {
+                    "A11y\\": "src/A11y/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Berkowitz",
+                    "email": "adam@adamjberkowitz.com"
+                }
+            ],
+            "description": "A package to generate accessible main navigation menus. It includes: a js script for the browser as an npm package, WordPress walker for theme development, and WordPress plugin.",
+            "time": "2018-11-30T15:47:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "ucomm/a11y-menu": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
