@@ -6,7 +6,7 @@ The goal is to provide a developer experience similar to the a11y-menu javascrip
 
 - Generating menus from JSON
 - Providing access to the minimal styles and script from the a11y-menu package
-- Allowing developers a straightforward menu generation experience
+- Allowing developers a straightforward menu generation experience. The class exposes a single static method.
 
 ## Installation
 This package should be installed with composer - `composer require aberkow/a11y-menu-php`.
@@ -67,10 +67,21 @@ Using the menu generator is straightforward. It requires
 
 ### Steps
 
-- require the generator class
-- get a json file as above and decode it
+- require `vendor/autoload.php`
+- create a json file as above and decode it
+```php
+$data = file_get_contents('path/to/file.json');
+$menu = json_decode($data)->menu;
+```
 - create navigation markup
-- echo the results of the generator
+  - prefix nav and ul ids with `am-`
+```php
+<nav id="am-my-nav">
+  <ul id="am-main-nav"></ul>
+</nav>
+```
+- echo the results of the menu generator inside the `<ul>`
+- add styles and the `Navigation.js` script
 
 ```php
 
@@ -88,5 +99,8 @@ Using the menu generator is straightforward. It requires
   <script src="vendor/ucomm/a11y-menu/dist/Navigation.js"></script>
 ```
 
-
-
+### More...
+For more details on styling and js implementation, [please see the `a11y-menu` github repo](https://github.com/aberkow/a11y-menu). This repo has information about
+- The `Navigation` javascript constructor
+- Incorporating alternative menu icons
+- Extending the base styles
