@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aberkow/a11y-menu.git",
-                "reference": "45512047f8d9eec24b088ae54b484cfb624221bf"
+                "reference": "31022071ef5e921e05f9ea0c16bd7de35dea3ec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aberkow/a11y-menu/zipball/45512047f8d9eec24b088ae54b484cfb624221bf",
-                "reference": "45512047f8d9eec24b088ae54b484cfb624221bf",
+                "url": "https://api.github.com/repos/aberkow/a11y-menu/zipball/31022071ef5e921e05f9ea0c16bd7de35dea3ec8",
+                "reference": "31022071ef5e921e05f9ea0c16bd7de35dea3ec8",
                 "shasum": ""
             },
             "require-dev": {
@@ -53,7 +53,7 @@
                 }
             ],
             "description": "A package to generate accessible main navigation menus. It includes: a js script for the browser as an npm package, WordPress walker for theme development, and WordPress plugin.",
-            "time": "2018-11-30T15:47:55+00:00"
+            "time": "2019-03-21T18:08:17+00:00"
         }
     ],
     "packages-dev": [],
